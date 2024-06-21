@@ -78,6 +78,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Contact
 
-**Author**: Salman Quadri and Gaurav Suthar
-**Email**: secretofsk@gmail.com
-**GitHub**: github.com/SKLordCoder
+- **Author**: Salman Quadri and Gaurav Suthar
+- **Email**: secretofsk@gmail.com
+- **GitHub**: github.com/SKLordCoder
