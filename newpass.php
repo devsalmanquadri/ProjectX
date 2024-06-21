@@ -14,7 +14,7 @@
             <h1>Change Password</h1>
             <div class="inputContainer">
                 <input required="required" id="inputField" placeholder="New Password" type="text">
-                <label class="usernameLabel" for="inputField">New Password</label>
+                <label class="usernameLabel">New Password</label>
                 <svg class="userIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"
                     fill="rgba(255,255,255,1)">
                     <path
@@ -24,7 +24,7 @@
             </div>
             <div class="inputContainer">
                 <input required="required" id="inputField" placeholder="Confirm Password" type="text">
-                <label class="usernameLabel" for="inputField">Confirm Password</label>
+                <label class="usernameLabel">Confirm Password</label>
                 <svg class="userIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"
                     fill="rgba(255,255,255,1)">
                     <path
