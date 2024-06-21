@@ -18,8 +18,8 @@
 ### ✍️ Random Dev Quote
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)
 
-### 😂 Random Dev Meme
-<img src='https://memer-new.vercel.app/' style="height: 400px;"/>
+### 🔝 Top Contributed Repo
+![](https://github-contributor-stats.vercel.app/api?username=SKLordCoder&limit=5&theme=dark&combine_all_yearly_contributions=true)
 
 ---
-[![](https://visitcount.itsvg.in/api?id=SKLordCoder&icon=1&color=4)](https://visitcount.itsvg.in)-->
+[![](https://visitcount.itsvg.in/api?id=SKLordCoder&icon=1&color=4)](https://visitcount.itsvg.in)
