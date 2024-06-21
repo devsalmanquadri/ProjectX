@@ -82,24 +82,26 @@
   } else {
     ?>
     <div class="main">
-      <img class="imglogin1" src="./assets/Mobile login-amico.svg" alt="Backimg">
+      <!-- <img class="imglogin1" src="./assets/Mobile login-amico.svg" alt="Backimg"> -->
       <form method="post" id="form1" class="loginform regform">
         <h1>Register</h1>
         <div class=" inputContainer">
           <input name="username1" required="required" id="inputField" placeholder="Username" type="text">
           <label class="usernameLabel">Username</label>
-          <svg viewBox="0 0 448 512" class="userIcon">
+          <svg class="userIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"
+            fill="rgba(0,0,0,1)">
             <path
-              d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z">
+              d="M4 22C4 17.5817 7.58172 14 12 14C16.4183 14 20 17.5817 20 22H4ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13Z">
             </path>
           </svg>
         </div>
         <div class="inputContainer">
           <input name="email1" required="required" id="inputField" placeholder="Email" type="email">
           <label class="usernameLabel">Email</label>
-          <svg viewBox="0 0 448 512" class="userIcon">
+          <svg class="userIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"
+            fill="rgba(0,0,0,1)">
             <path
-              d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z">
+              d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12.0606 11.6829L5.64722 6.2377L4.35278 7.7623L12.0731 14.3171L19.6544 7.75616L18.3456 6.24384L12.0606 11.6829Z">
             </path>
           </svg>
         </div>
@@ -141,9 +143,10 @@
         <div class="inputContainer">
           <input name="username" required="required" id="inputField" placeholder="Username" type="text">
           <label class="usernameLabel">Username</label>
-          <svg viewBox="0 0 448 512" class="userIcon">
+          <svg class="userIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"
+            fill="rgba(0,0,0,1)">
             <path
-              d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z">
+              d="M4 22C4 17.5817 7.58172 14 12 14C16.4183 14 20 17.5817 20 22H4ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13Z">
             </path>
           </svg>
         </div>
