@@ -31,8 +31,8 @@ Check out our [live demo](https://your-live-demo-link.com).
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) >= v14
-- [npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/)
+- php
+- xampp
 
 ### Clone the Repository
 
@@ -50,8 +50,8 @@ cd ProjectX
 
 ## Usage
 
-Start the development server:
-Open http://localhost:3000 to view it in the browser.
+- Start the development server:
+- Open http://localhost:3000 to view it in the browser.
 
 ## Screenshots
 
@@ -62,19 +62,13 @@ Open http://localhost:3000 to view it in the browser.
 
 We welcome contributions from the community! Please follow these steps to contribute:
 
-## Fork the repository
+### Fork the repository
 
-```
 Create a new branch: git checkout -b feature/your-feature-name
 Commit your changes: git commit -m 'Add some feature'
 Push to the branch: git push origin feature/your-feature-name
 Create a Pull Request
 Please read our Contributing Guidelines for more details.
-```
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Contact
 
