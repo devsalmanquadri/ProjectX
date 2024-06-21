@@ -42,25 +42,27 @@ git clone https://github.com/sklordcoder/ProjectX.git
 cd ProjectX
 ```
 
-**Install Dependencies**
+## Install Dependencies
 
 - php
 - xampp
 - mysql
 
-**Usage**
+## Usage
+
 Start the development server:
 Open http://localhost:3000 to view it in the browser.
 
-**Screenshots**
+## Screenshots
 
 - Study Planner
 - Idea Sharing
 
-**Contributing**
+## Contributing
+
 We welcome contributions from the community! Please follow these steps to contribute:
 
-**Fork the repository**
+## Fork the repository
 
 ```
 Create a new branch: git checkout -b feature/your-feature-name
@@ -70,10 +72,12 @@ Create a Pull Request
 Please read our Contributing Guidelines for more details.
 ```
 
-**License**
+## License
+
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-**Contact**
-_Author_: Salman Quadri and Gaurav Suthar
-_Email_: secretofsk@gmail.com
-_GitHub_: github.com/SKLordCoder
+## Contact
+
+**Author**: Salman Quadri and Gaurav Suthar
+**Email**: secretofsk@gmail.com
+**GitHub**: github.com/SKLordCoder
