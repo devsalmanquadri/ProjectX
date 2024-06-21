@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
-  <link rel="stylesheet" href="login.css" />
+  <link rel="stylesheet" href="./Styles/login.css" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
 
@@ -81,7 +81,7 @@
           <a onclick="changescreen()" href="#">Create account</a>
         </div>
         <div class="Forgetpass">
-          <a href="./passforget.html">
+          <a href="./passforget.php">
             Forget password?
           </a>
         </div>
@@ -91,6 +91,6 @@
   <div class="background1">
   </div>
 </body>
-<script src="./login.js"></script>
+<script src="./js/login.js"></script>
 
 </html>
