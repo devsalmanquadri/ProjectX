@@ -1,3 +1,7 @@
+<?php
+//include auth_session.php file on all user panel pages
+include ("auth_session.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,6 +13,9 @@
 
 <body>
     <h1>Home Page</h1>
+    <?php
+    echo "<a href='./logout.php' class='log1'><span>Logut</span></a>";
+    ?>
 </body>
 
 </html>

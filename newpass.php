@@ -10,7 +10,7 @@
 
 <body>
     <div class="main">
-        <form action="#" class="loginform" style="height: 40vh;">
+        <form action="#" class="loginform" style="height: 18vw;">
             <h1>Change Password</h1>
             <div class="inputContainer">
                 <input required="required" id="inputField" placeholder="New Password" type="text">

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>Login</title>
   <link rel="stylesheet" href="./Styles/login.css" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
@@ -24,21 +24,21 @@
     $query = "SELECT * FROM `userdata` WHERE username='$username' AND password='" . md5($password) . "'";
     $result = mysqli_query($con, $query) or die(mysqli_error($con));
     $rows = mysqli_num_rows($result);
-    if ($rows == 1) {
+    if ($rows >= 1) {
       $_SESSION['username'] = $username;
-      // Redirect to user dashboard page
       header("Location: index.php");
+      // Redirect to user dashboard page
     } else {
-      echo "<div class='form'>
-              <h3>Incorrect Username/password.</h3><br/>
-              <p class='link'>Click here to <a href='login.php'>Login</a> again.</p>
-              </div>";
+      echo '<script language="javascript">';
+      echo 'alert("Incorrect Username/password.");';
+      echo 'document.location.href = "./login.php";';
+      echo '</script>';
       exit();
     }
   } elseif (isset($_REQUEST['username1'])) {
     // removes backslashes
-    $username = stripslashes($_REQUEST['username1']);
     //escapes special characters in a string
+    $username = stripslashes($_REQUEST['username1']);
     $username = mysqli_real_escape_string($con, $username);
     $email = stripslashes($_REQUEST['email1']);
     $email = mysqli_real_escape_string($con, $email);
@@ -48,32 +48,44 @@
     $confirmpassword = mysqli_real_escape_string($con, $confirmpassword);
     $create_datetime = date("Y-m-d H:i:s");
     if ($password != $confirmpassword) {
-      echo "<div class='form'>
-              <h3>Passwords do not match.</h3><br/>
-              <p class='link'>Click here to <a href='login.php'>register</a> again.</p>
-              </div>";
+      echo '<script language="javascript">';
+      echo 'alert("Password do not match");';
+      echo 'document.location.href = "./login.php";';
+      echo '</script>';
+      exit();
+    }
+    $query1 = "SELECT * FROM `userdata` WHERE `username` = '$username' OR `email` = '$email'"
+    ;
+    $result1 = mysqli_query($con, $query1);
+    $rows1 = mysqli_num_rows($result1);
+    if ($rows1 >= 1) {
+      echo '<script language="javascript">';
+      echo 'alert("Username or email already exists.");';
+      echo 'document.location.href = "./login.php";';
+      echo '</script>';
       exit();
     }
     $query = "INSERT into `userdata` (username, email, password, datetime) VALUES ('$username',  '$email','" . md5($password) . "', '$create_datetime')";
     $result = mysqli_query($con, $query);
     if ($result) {
-      echo "<div class='form'>
-              <h3>You are registered successfully.</h3><br/>
-              <p class='link'>Click here to <a href='login.php'>Login</a></p>
-              </div>";
+      echo '<script language="javascript">';
+      echo 'alert("You are registered successfully.");';
+      echo 'document.location.href = "./login.php";';
+
+      echo '</script>';
     } else {
-      echo "<div class='form'>
-              <h3>Required fields are missing.</h3><br/>
-              <p class='link'>Click here to <a href='registration.php'>registration</a> again.</p>
-              </div>";
+      echo '<script language="javascript">';
+      echo 'alert("Required fields are missing");';
+      echo 'document.location.href = "./login.php";';
+      echo '</script>';
     }
   } else {
     ?>
     <div class="main">
       <img class="imglogin1" src="./assets/Mobile login-amico.svg" alt="Backimg">
-      <form method="post" id="form1" class="loginform" style="height: 60vh;">
+      <form method="post" id="form1" class="loginform regform">
         <h1>Register</h1>
-        <div class="inputContainer">
+        <div class=" inputContainer">
           <input name="username1" required="required" id="inputField" placeholder="Username" type="text">
           <label class="usernameLabel">Username</label>
           <svg viewBox="0 0 448 512" class="userIcon">
@@ -92,8 +104,8 @@
           </svg>
         </div>
         <div class="inputContainer">
-          <input name="password1" class="password1" required="required" id="inputField" placeholder="Password"
-            type="password">
+          <input name="password1" class="password1" minlength="8" required="required" id="inputField"
+            placeholder="Password" type="password">
           <i onclick="eyechange(this,'password1')" class="ri-eye-off-fill"></i>
           <label class="usernameLabel">Password</label>
           <svg class="userIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"
@@ -104,7 +116,7 @@
           </svg>
         </div>
         <div class="inputContainer">
-          <input name="confirm_password1" class="confirm_password1" required="required" id="inputField"
+          <input name="confirm_password1" class="confirm_password1" min="8" required="required" id="inputField"
             placeholder="Confirm Password" type="password">
           <i onclick="eyechange(this,'confirm_password1')" class="ri-eye-off-fill"></i>
           <label class="usernameLabel">Confirm Password</label>
@@ -124,7 +136,7 @@
           </div>
         </div>
       </form>
-      <form method="post" id="form2" class="loginform">
+      <form method="post" id="form2" class="loginform loginform1">
         <h1>Login</h1>
         <div class="inputContainer">
           <input name="username" required="required" id="inputField" placeholder="Username" type="text">
@@ -136,7 +148,7 @@
           </svg>
         </div>
         <div class="inputContainer">
-          <input name="password" class="password" required="required" id="inputField" placeholder="Password"
+          <input name="password" class="password" minlength="8" required="required" id="inputField" placeholder="Password"
             type="password">
           <i onclick="eyechange(this,'password')" class="ri-eye-off-fill"></i>
           <label class="usernameLabel">Password</label>

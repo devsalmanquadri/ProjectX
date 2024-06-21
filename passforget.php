@@ -49,15 +49,14 @@
         }
     } else { ?>
         <div class="main">
-            <form method="post" class="loginform" style="height: 55vh;">
+            <form method="post" class="loginform" style="height: auto;">
                 <h1>Change Password</h1>
                 <div class="inputContainer">
                     <input name="username" required="required" id="inputField" placeholder="Username/Email" type="text">
                     <label class="usernameLabel">Username/Email</label>
-                    <svg class="userIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"
-                        fill="rgba(255,255,255,1)">
+                    <svg viewBox="0 0 448 512" class="userIcon">
                         <path
-                            d="M19 10H20C20.5523 10 21 10.4477 21 11V21C21 21.5523 20.5523 22 20 22H4C3.44772 22 3 21.5523 3 21V11C3 10.4477 3.44772 10 4 10H5V9C5 5.13401 8.13401 2 12 2C15.866 2 19 5.13401 19 9V10ZM17 10V9C17 6.23858 14.7614 4 12 4C9.23858 4 7 6.23858 7 9V10H17ZM11 14V18H13V14H11Z">
+                            d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z">
                         </path>
                     </svg>
                 </div>
