@@ -118,6 +118,7 @@
 }
 .loginform a {
   color: black;
+  /* text-decoration: none; */
 }
 .inputContainer {
   position: relative;
