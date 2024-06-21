@@ -24,6 +24,8 @@ Check out our [live demo](https://your-live-demo-link.com).
 - [Screenshots](#screenshots)
 - [Contributing](#contributing)
 - [License](#license)
+- [Contact](#contact)
+- [Acknowledgments](#acknowledgments)
 
 ## Installation
 
@@ -34,6 +36,39 @@ Check out our [live demo](https://your-live-demo-link.com).
 
 ### Clone the Repository
 
-```bash
-git clone https://github.com/yourusername/ProjectX.git
+```
+bash
+git clone https://github.com/sklordcoder/ProjectX.git
 cd ProjectX
+```
+**Install Dependencies**
+- php
+- xampp
+- mysql
+
+
+**Usage**
+Start the development server:
+Open http://localhost:3000 to view it in the browser.
+
+**Screenshots**
+- Study Planner
+- Idea Sharing
+
+Contributing
+We welcome contributions from the community! Please follow these steps to contribute:
+
+Fork the repository
+Create a new branch: git checkout -b feature/your-feature-name
+Commit your changes: git commit -m 'Add some feature'
+Push to the branch: git push origin feature/your-feature-name
+Create a Pull Request
+Please read our Contributing Guidelines for more details.
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+Contact
+Author: Salman Quadri and Gaurav Suthar
+Email: secretofsk@gmail.com
+GitHub: github.com/SKLordCoder
