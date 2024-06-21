@@ -58,9 +58,13 @@
   height: 55vh;
   width: 25vw;
   border: 2px solid rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(50px);
-  /* filter: drop-shadow(1px 1px 5px #000); */
-  backdrop-filter: drop-shadow(5px 5px 5px #000);
+  background: linear-gradient(
+    90deg,
+    rgb(232, 200, 255) 0%,
+    rgb(255, 188, 188) 50%,
+    rgb(255, 228, 194) 100%
+  );
+  backdrop-filter: blur(10px);
 }
 /*
 .logininput input[type="text"] {
@@ -104,8 +108,13 @@
 .loginform h1 {
   font-size: 2rem;
   font-weight: 700;
-  color: rgb(0, 0, 0);
+  color: rgb(170, 70, 236);
   margin: 1.5rem 0;
+  border-bottom: 3px solid #000000;
+  border-radius: 2rem;
+  padding: 0.5rem 1.5rem;
+  /* background-color: lightskyblue; */
+  /* backdrop-filter: drop-shadow(2px 3px 4px rgb(1, 1, 1)); */
 }
 .loginform a {
   color: black;
