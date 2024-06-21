@@ -13,6 +13,7 @@ include ("auth_session.php");
 
 <body>
     <h1>Home Page</h1>
+    <p>Hey, <?php echo $_SESSION['username']; ?>!</p>
     <?php
     echo "<a href='./logout.php' class='log1'><span>Logut</span></a>";
     ?>
