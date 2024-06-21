@@ -39,9 +39,6 @@ CREATE TABLE `userdata` (
 -- Dumping data for table `userdata`
 --
 
-INSERT INTO `userdata` (`id`, `username`, `email`, `password`, `datetime`) VALUES
-(1, 'salman', 'secretofsk@gmail.com', '202cb962ac59075b964b07152d234b70', '2024-06-21 12:25:33');
-
 --
 -- Indexes for dumped tables
 --
@@ -60,7 +57,7 @@ ALTER TABLE `userdata`
 -- AUTO_INCREMENT for table `userdata`
 --
 ALTER TABLE `userdata`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
