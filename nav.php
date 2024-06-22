@@ -46,7 +46,7 @@ if (!isset($_SESSION)) {
                     <?php
                     if (!isset($_SESSION['username'])) {
                         echo "<a href='./login.php' class='log1'><span>Login</span></a>
-                    <a href='./registration.php' class='log1'><span>Sign In</span></a>";
+                    <a href='./login.php' class='log1'><span>Sign In</span></a>";
                     } else {
                         echo "<a href='./profileform.php' class='Profile log1'>Profile</a>";
                         echo "<a href='./logout.php' class='log1'><span>Logut</span></a>";
