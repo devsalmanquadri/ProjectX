@@ -1,3 +1,8 @@
+:root {
+  --darkmode: #fff;
+  --lightmode: #000;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +10,7 @@
   font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Helvetica, Arial, sans-serif;
 }
+
 .nav1 {
   position: fixed;
   width: 100%;
@@ -52,7 +58,7 @@ nav {
   > li a {
     position: relative;
     text-decoration: none;
-    color: #fff;
+    color: var(--lightmode);
     cursor: pointer;
     font-size: 1vw;
     border-radius: 2rem;
@@ -103,7 +109,7 @@ nav {
 .profile img {
   width: 2.5vw;
   height: 2.5vw;
-  background-color: #ffffff;
+  background-color: #ffffff48;
   border-radius: 50%;
   border: 2px solid #ccc;
   object-fit: cover;
@@ -121,7 +127,7 @@ nav {
   padding-top: 0.2vw;
   font-size: 1.4vw;
   font-weight: 600;
-  color: #fff;
+  color: var(--lightmode);
 }
 
 .profileitems {
@@ -140,7 +146,7 @@ nav {
   transition: all 0.2s ease-in-out;
   display: none;
   > a {
-    color: rgb(228, 228, 228);
+    color: var(--lightmode);
     text-decoration: none;
     border-bottom: 1.5px solid transparent;
     padding: 0.3vw;
@@ -154,4 +160,30 @@ nav {
 .profileitems.active {
   display: flex;
   transition: all 0.8s;
+}
+
+@media screen and (max-width: 768px) {
+  .nav1 {
+    position: absolute;
+  }
+  .logo a {
+    font-size: 2.5vw;
+  }
+  nav {
+    border-radius: 0%;
+    width: 100%;
+  }
+  nav * {
+    font-size: 2vw;
+  }
+  .navitems li a {
+    font-size: 2vw;
+  }
+  .profile img {
+    width: 4vw;
+    height: 4vw;
+  }
+  .profile i {
+    font-size: 2.8vw;
+  }
 }

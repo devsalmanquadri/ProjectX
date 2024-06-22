@@ -96,7 +96,8 @@
           </svg>
         </div>
         <div class="inputContainer">
-          <input name="email1" required="required" id="inputField" placeholder="Email" type="email">
+          <input name="email1" pattern="[a-zA-Z0-9]+@[a-z]+[a-z]\.[a-z]{2,3}" required="required" id="inputField"
+            placeholder="Email" type="email">
           <label class="usernameLabel">Email</label>
           <svg class="userIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"
             fill="rgba(0,0,0,1)">
