@@ -4,146 +4,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeHub - Student Portal</title>
+    <title>Student Management System</title>
     <link rel="stylesheet" href="./Styles/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <?php include ("nav.php"); ?>
-    <section id="home" class="banner">
-        <div class="container">
-            <div class="banner-content">
-                <h1>Welcome to CodeHub</h1>
-                <p>Empower Your Coding Journey</p>
-                <button onclick="showAlert()">Get Started</button>
-            </div>
+    <?php include ("./nav.php"); ?>
+    <div class="container">
+        <div class="sidenav">
+            <!-- <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div> -->
+            <ul>
+                <li><a href="#" class="active">Dashboard</a></li>
+                <li><a href="#">Progress Tracking</a></li>
+                <li><a href="#">Chat Rooms</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Forums</a></li>
+                <li><a href="#">Study Tools</a></li>
+                <li><a href="#">Attendance</a></li>
+                <li><a href="#">Grades</a></li>
+                <li><a href="#">Tasks</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
         </div>
-    </section>
-    <section id="profile" class="section">
-        <div class="container">
-            <h2>Profile</h2>
-            <div class="profile-content">
-                <div class="profile-avatar">
-                    <img src="https://via.placeholder.com/150" alt="User Avatar">
+        <div class="main-content">
+            <header>
+                <h1>Welcome to Your Student Dashboard</h1>
+            </header>
+            <section class="section">
+                <h2>Dashboard Overview</h2>
+                <div class="dashboard-content">
+                    <div class="progress-chart-container">
+                        <canvas id="progressChart"></canvas>
+                    </div>
+                    <div class="recent-activity">
+                        <h3>Recent Activity</h3>
+                        <ul>
+                            <li>Completed JavaScript quiz - 80%</li>
+                            <li>Joined Study Group: React Development</li>
+                            <li>Submitted CSS Project</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="profile-details">
-                    <h3>Username</h3>
-                    <p>Bio: Aspiring developer with a passion for coding and learning new technologies.</p>
-                    <p>Study Interests: Web Development, Data Science, Mobile Development</p>
-                    <button>Edit Profile</button>
+            </section>
+            <section class="section">
+                <h2>Progress Tracking</h2>
+                <div class="progress-content">
+                    <div class="goals">
+                        <h3>Goals</h3>
+                        <ul>
+                            <li>Complete React Tutorial by July</li>
+                            <li>Improve JavaScript Skills</li>
+                        </ul>
+                    </div>
+                    <div class="milestones">
+                        <h3>Milestones</h3>
+                        <ul>
+                            <li>Passed HTML Certification</li>
+                            <li>Attended Web Development Workshop</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section id="dashboard" class="section">
-        <div class="container">
-            <h2>Dashboard</h2>
-            <div class="dashboard-content">
-                <div class="progress-chart">
-                    <h3>Progress Overview</h3>
-                    <canvas id="progressChart"></canvas>
+            </section>
+            <section class="section">
+                <h2>Chat Rooms</h2>
+                <div class="chat-content">
+                    <div class="chat-group">
+                        <h3>React Study Group</h3>
+                        <p>Discussing React hooks and state management...</p>
+                    </div>
+                    <div class="chat-group">
+                        <h3>JavaScript Q&A</h3>
+                        <p>Get help with JavaScript syntax and concepts...</p>
+                    </div>
                 </div>
-                <div class="recent-activity">
-                    <h3>Recent Activity</h3>
-                    <ul>
-                        <li>Completed "JavaScript Basics" course</li>
-                        <li>Joined "Data Science Study Group"</li>
-                        <li>Added new project "Portfolio Website"</li>
-                    </ul>
+            </section>
+            <section class="section">
+                <h2>Resources</h2>
+                <div class="resource-gallery">
+                    <div class="resource-item">
+                        <i class="fas fa-book"></i>
+                        <h3>JavaScript Guide</h3>
+                        <p>Explore the fundamentals of JavaScript...</p>
+                    </div>
+                    <div class="resource-item">
+                        <i class="fas fa-video"></i>
+                        <h3>React Tutorial</h3>
+                        <p>Learn React from scratch with hands-on examples...</p>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section id="schedule" class="section">
-        <div class="container">
-            <h2>Study Schedule</h2>
-            <div class="calendar-container">
-                <iframe src="https://calendar.google.com/calendar/embed?src=your_calendar_id&ctz=America/New_York"
-                    style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-            </div>
-        </div>
-    </section>
-    <section id="progress" class="section">
-        <div class="container">
-            <h2>Progress Tracking</h2>
-            <div class="progress-content">
-                <div class="goals">
-                    <h3>Goals</h3>
-                    <ul>
-                        <li>Complete "React.js Advanced" course</li>
-                        <li>Build a weather app</li>
-                        <li>Contribute to open-source</li>
-                    </ul>
+            </section>
+            <section class="section">
+                <h2>Forums</h2>
+                <div class="forum-list">
+                    <div class="forum-item">
+                        <h3>Web Development Forum</h3>
+                        <p>Discuss latest trends in web development...</p>
+                    </div>
+                    <div class="forum-item">
+                        <h3>Programming Challenges</h3>
+                        <p>Participate in coding challenges and improve skills...</p>
+                    </div>
                 </div>
-                <div class="milestones">
-                    <h3>Milestones</h3>
-                    <ul>
-                        <li>Finish 50% of "Machine Learning Basics"</li>
-                        <li>Implement authentication in "Blog App"</li>
-                    </ul>
+            </section>
+            <section class="section">
+                <h2>Study Tools</h2>
+                <div class="tools-content">
+                    <div class="tool-item">
+                        <i class="fas fa-clipboard-list"></i>
+                        <h3>Task Manager</h3>
+                        <p>Organize study tasks and track progress...</p>
+                    </div>
+                    <div class="tool-item">
+                        <i class="fas fa-file-alt"></i>
+                        <h3>Notes Organizer</h3>
+                        <p>Take and manage study notes effectively...</p>
+                    </div>
                 </div>
-            </div>
+            </section>
         </div>
-    </section>
-    <section id="chat" class="section">
-        <div class="container">
-            <h2>Chat Rooms</h2>
-            <div class="chat-content">
-                <div class="chat-group">
-                    <h3>Web Development</h3>
-                    <button>Join Chat</button>
-                </div>
-                <div class="chat-group">
-                    <h3>Data Science</h3>
-                    <button>Join Chat</button>
-                </div>
-                <div class="chat-group">
-                    <h3>Mobile Development</h3>
-                    <button>Join Chat</button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="resources" class="section">
-        <div class="container">
-            <h2>Resource Library</h2>
-            <div class="resource-gallery">
-                <a href="#" class="resource-item"><i class="fas fa-book"></i> Documentation</a>
-                <a href="#" class="resource-item"><i class="fas fa-code"></i> Code Snippets</a>
-                <a href="#" class="resource-item"><i class="fas fa-video"></i> Tutorials</a>
-                <a href="#" class="resource-item"><i class="fas fa-chalkboard-teacher"></i> Mentorship</a>
-            </div>
-        </div>
-    </section>
-    <section id="forums" class="section">
-        <div class="container">
-            <h2>Discussion Forums</h2>
-            <div class="forum-list">
-                <a href="#">Web Development</a>
-                <a href="#">Data Science</a>
-                <a href="#">Mobile Development</a>
-                <a href="#">Project Ideas</a>
-            </div>
-        </div>
-    </section>
-    <section id="tools" class="section">
-        <div class="container">
-            <h2>Study Tools</h2>
-            <div class="tools-content">
-                <a href="#" class="tool-item"><i class="fas fa-file-alt"></i> Flashcards</a>
-                <a href="#" class="tool-item"><i class="fas fa-question-circle"></i> Quizzes</a>
-                <a href="#" class="tool-item"><i class="fas fa-laptop"></i> Practice Tests</a>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 CodeHub. All rights reserved.</p>
-        </div>
-    </footer>
-    <script src="scripts.js"></script>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const body = document.body;
+
+
+            // Chart.js code remains unchanged
+            var ctx = document.getElementById('progressChart').getContext('2d');
+            var progressChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['React', 'JavaScript', 'CSS', 'HTML', 'PYTHON', 'C++'],
+                    datasets: [{
+                        label: 'Completion (%)',
+                        data: [75, 50, 90, 60, 80, 68],
+                        backgroundColor: [
+                            '#FF9C00', // Orange
+                            '#FFBB00', // Yellow
+                            '#00A6FF', // Blue
+                            '#B366FF'  // Purple
+                        ],
+                        borderColor: [
+                            '#FF9C00',
+                            '#FFBB00',
+                            '#00A6FF',
+                            '#B366FF'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 100
+                        }
+                    }
+                }
+            });
+        });
+
+    </script>
 </body>
 
 </html>
