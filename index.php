@@ -21,7 +21,7 @@
                 <li><a href="#">Chat Rooms</a></li>
                 <li><a href="#">Resources</a></li>
                 <li><a href="#">Forums</a></li>
-                <li><a href="#">Study Tools</a></li>
+                <li><a href="./studytools.php">Study Tools</a></li>
                 <li><a href="#">Attendance</a></li>
                 <li><a href="#">Grades</a></li>
                 <li><a href="#">Tasks</a></li>

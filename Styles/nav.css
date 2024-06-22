@@ -26,11 +26,12 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  z-index: 1;
 }
 nav {
   z-index: 999;
   background-color: #ffffff12;
-  position: relative;
+  position: fixed;
   top: 0.4vw;
   width: 60%;
   display: flex;
