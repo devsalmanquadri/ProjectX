@@ -18,6 +18,7 @@
   justify-content: center;
 }
 nav {
+  z-index: 999;
   background-color: #ffffff12;
   position: relative;
   top: 0.4vw;
@@ -37,7 +38,7 @@ nav {
   letter-spacing: 1px;
   text-transform: capitalize;
   outline: none;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(10px);
   user-select: none;
 }
 .logo a {
