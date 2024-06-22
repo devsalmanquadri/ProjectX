@@ -9,6 +9,9 @@
 </head>
 
 <body>
+    <?php
+    include ("./nav.php");
+    ?>
     <div class="main">
         <form action="#" class="loginform" style="height: 18vw;">
             <h1>Change Password</h1>

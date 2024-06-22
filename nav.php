@@ -31,7 +31,14 @@ if (!isset($_SESSION)) {
                 <div class="profile">
                     <img src="./assets/profile.png" alt="profile">
                     <div class="usernameicon">
-                        <p><?php echo $_SESSION['username']; ?></p>
+                        <p><?php
+                        if (!isset($_SESSION['username'])) {
+                            echo "Guest";
+                        } else {
+                            echo $_SESSION['username'];
+                        }
+
+                        ?></p>
                         <i class="ri-arrow-drop-down-line"></i>
                     </div>
                 </div>

@@ -10,8 +10,10 @@
 
 <body>
     <?php
+    include ("./nav.php");
+    ?>
+    <?php
     require ('db.php');
-    session_start();
     if (isset($_POST['username'])) {
         $username = stripslashes($_REQUEST['username']); // removes backslashes
         $username = mysqli_real_escape_string($con, $username);
